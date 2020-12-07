@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	
+	const PI = 3.1414
+	var radio = prompt("Ingrese el radio del circulo", "")
+	
+	mostrar(circunferencia(radio), "circunferencia")
+	mostrar(area(radio), "area")
+
+	function mostrar(res, operacion){
+
+	alert("El resultado de"+operacion" es: "+res.toFixed(2))
+	document.write("El resultado de "+operacion" es: "+res.toFixed(2))
+	console.log("El resultado de "+operacion" es: "+res.toFixed(2))
+	}
+
+	function circunferencia(radio){
+		let result = 2*PI*radio
+		return result
+	}
+
+	function area(radio){
+		let result = PI*radio*radio
+		return result
+
+	}
+
+</script>
